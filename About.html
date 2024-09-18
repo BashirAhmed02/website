@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-section img {
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        .logo-section h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .logo-section p {
+            margin: 0;
+            font-size: 12px;
+            color: #555;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px 0;
+            display: block;
+        }
+
+        .navbar ul li:hover > a {
+            color: #007BFF;
+        }
+
+        .navbar ul li ul {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: white;
+            list-style: none;
+            padding: 10px 0;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        .navbar ul li:hover ul {
+            display: block;
+        }
+
+        .navbar ul li ul li {
+            padding: 5px 20px;
+        }
+
+        .navbar ul li ul li a {
+            color: #333;
+            font-size: 14px;
+        }
+
+        .navbar ul li ul li a:hover {
+            color: #007BFF;
+        }
+
+        /* About Section */
+        .about {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .about h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* CV Container */
+        .cv-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .photo-box {
+            float: right;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border: 5px solid #007BFF;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cv-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        .cv-container p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #555;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #1B2C48;
+            color: white;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+        }
+
+        .footer-section {
+            width: 30%;
+        }
+
+        .footer-section h3 {
+            color: #00a9ff;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: white;
+            font-size: 14px;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: #00a9ff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #12253D;
+            color: white;
+            font-size: 12px;
+        }
+
+        .footer .social-icons a {
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="logo.JPG" alt="FAST Logo">
+            <div>
+                <h1>National University</h1>
+                <p>Of Computer and Emerging Sciences</p>
+            </div>
+        </div>
+        <div class="logo-section">
+            <img src="logo2.JPG" alt="FAST Second Logo">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" title="Goto Homepage">Home</a></li>
+            <li>
+                <a href="Academics.html">Academics</a>
+                <ul>
+                    <li><a href="#">Undergraduate</a></li>
+                    <li><a href="#">Postgraduate</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Admission.html" title="Goto Admissions">Admissions</a>
+                <ul>
+                    <li><a href="#">Karachi Campus</a></li>
+                    <li><a href="#">Islamabad Campus</a></li>
+                    <li><a href="#">Lahore Campus</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Gallery.html" title="Goto Gallery">Gallery</a>
+                <ul>
+                    <li><a href="About.html" title="Goto About Us">About Us</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>About Me</h1>
+        <p>Welcome to the About page. You can navigate to the <a href="first_page.html">First Page</a>.</p>
+    </section>
+
+    <!-- CV Content -->
+    <div class="cv-container">
+        <div class="photo-box">
+            <a href="larger_pic.html"><img class="photo" src="image.jpg" alt="Profile Picture"></a>
+        </div>
+
+        <h2>Bashir Ahmed Khan</h2>
+        <p>Email: bashir.a.khan02@gmail.com</p>
+        <p>Phone: +923163730351</p>
+        <p>Address: G11/3 Islamabad</p>
+
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Degree:</strong> Bachelor in Computer Science</li>
+            <li><strong>Institution:</strong> FAST NUCES Islamabad</li>
+            <li><strong>Year:</strong> 2020 - 2024</li>
+        </ul>
+
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Position:</strong> FOIA Data Engineer</li>
+            <li><strong>Company:</strong> UniTech Solutions</li>
+            <li><strong>Year:</strong> 2023 - Present</li>
+            <li><strong>Responsibilities:</strong>
+                <ul>
+                    <li>Gathering data to be used for processing and FOIA requests.</li>
+                    <li>Keeping in constant contact with the client and the agencies to provide timely updates.</li>
+                    <li>Managing a team of recruits.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>SQL, Excel, Python</li>
+            <li>Git, Docker</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Gaming</li>
+            <li>Gym</li>
+            <li>Reading</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Providing quality education and fostering the next generation of leaders.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+                <p><a href="#">Careers</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="face.png" width="30px" height="30px"></a>
+                    <a href="#"><img src="ins.jfif" width="30px" height="30px"></a>
+                    <a href="#"><img src="twit.png" width="30px" height="30px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 National University. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
